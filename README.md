@@ -1,33 +1,14 @@
-# Weather Forecast CLI
+## Ejemplos de uso
 
-This is a command line project that provides weather forecasts for a specific location.
+node src/index.js current Madrid,ES --units=metric
+node src/index.js forecast Santander,ES --days=2 --units=imperial
 
-## Requirements
+## Requisitos
 
-- Node.js
-- npm
+1. **API Key de OpenWeather**: Debes obtener una clave API de [OpenWeather](https://openweathermap.org/api).
+2. **Node.js**: Asegúrate de tener Node.js instalado en tu dispositivo.
+3. **Clonar el Proyecto**: Clona este repositorio en tu máquina local.
+4. **Instalar Dependencias**: Ejecuta `npm install` para instalar las dependencias necesarias.
+5. **Archivo `.env`**: Crea un archivo `.env` en la raíz del proyecto con tu clave API de OpenWeather:
 
-## Setup
-
-1. Clone this repository on your local machine.
-2. Navigate to the project directory.
-3. Run `npm install` to install the project dependencies.
-4. Create a `.env` file at the root of the project and add your OpenWeatherMap API key as `API_KEY`.
-
-   Example:
-
-   ```env
-   API_KEY=your_api_key
-   ```
-
-## Use cases
-
-index.js
-
-- node index.js current Madrid,ES
-- node index.js current Madrid,ES --units=imperial
-
-index2.js
-
-- node index2.js forecast Santander,ES --days=2 --units=imperial
-- node index2.js forecast Santander,ES --days=3
+API_KEY=tu_api_key
